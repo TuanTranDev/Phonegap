@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+	<title> hello world </title>
+</head>
+<body>
+	<button id ='hello'> Hi you </button>
+	<button id ='clear'> Bye bye</button>
+	<div id="results"> </div> 
+	<script src="js/zepto.min.js"></script>
+	<script src="js/hello.js"></script>
+	<script>
+	$('#hello').click(function(){
+		HELLO.HiYou($("#results"));
+	});
+	$('#clear').click(function(){
+		$("#results").html('');
+	});
+	</script>
+</body>
+</html>
